@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+
     <title>Kevin Gonzalez - Portfolio</title>
 
     <!-- Bootstrap core CSS -->
@@ -15,6 +16,8 @@
     <link href="../css/style.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous">
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.Project section twoapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.Project section twoapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -57,10 +60,13 @@
 
     <header class="masthead text-center text-white d-flex">
       <div class="container my-auto">
+        
+        <img src="img/me/me.jpg" alt="self portrait" class="img-circle" style="border: 1px solid white; max-width: 20vw; max-height: 20vh; border-radius: 50%">
+        
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h1 class="text-uppercase">
-              <strong>Kevin gonzalez</strong>
+              <strong>Kevin Gonzalez</strong>
             </h1>
             <hr>
           </div>
@@ -129,17 +135,22 @@
     </section>
 
     <section>
-      <h2 class="section-heading align-self-center">Projects</h2>
-      <div>
+      <h2 class="section-heading align-self-center" style="text-align: center">Projects</h2>
+      <hr>
+      <div style="text-align: center">
         <a href="http://kgonzalez.techlaunch.io/invoices">Invoices</a>
       </div>
 
-      <div>
+      <div style="text-align: center">
         <a href="http://kgonzalez.techlaunch.io/Music-Boxes">Music Boxes</a>
       </div>
 
-      <div>
+      <div style="text-align: center">
         <a href="http://kgonzalez.techlaunch.io/dog-app">Dog App</a>
+      </div>
+
+      <div style="text-align: center">
+        <a href="http://kgonzalez.techlaunch.io/weather-app">Weather App</a>
       </div>
      
     </section>
@@ -154,10 +165,11 @@
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
+                      <div onclick="openInNewTab('http://kgonzalez.techlaunch.io/invoices');" style="height: 100%; width: 100%; z-index: 10;">Invoices</div>
                     <!-- Category -->
                   </div>
                   <div class="project-name">
-                    Invoices
+                    <!-- Invoices -->
                   </div>
                 </div>
               </div>
@@ -171,8 +183,8 @@
                   <div class="project-category text-faded">
                     <!-- Category -->
                   </div>
-                  <div class="project-name">
-                    Music Boxes App
+                  <div class="project-na((m))e">
+                    <!-- Music Boxes App -->
                   </div>
                 </div>
               </div>
@@ -187,7 +199,7 @@
                     <!-- Category -->
                   </div>
                   <div class="project-name">
-                    Dog API
+                    <!-- Dog API -->
                   </div>
                 </div>
               </div>
@@ -196,13 +208,14 @@
           <div class="col-sm-12">
             <a class="portfolio-box" href="vendor/projects/WeatherAppProject.png">
               <img class="img-fluid" src="vendor/projects/WeatherAppProject.png" alt="Weather App">
+              </a>
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
                     <!-- Category -->
                   </div>
                   <div class="project-name">
-                    Weather App
+                    <!-- Weather App -->
                   </div>
                 </div>
               </div>
@@ -215,10 +228,7 @@
     
     <section>
       
-      <div class="col-sm">
-      
-          <a href="http://kgonzalez.techlaunch.io/weather-app">Weather App</a>
-        
+      <div class="col-sm" style="text-align: center">    
       </div>
       
     </section>
@@ -255,6 +265,12 @@
               <a href="mailto:kgonzalez@techlaunch.io">kgonzalez@techlaunch.io</a>
             </p>
           </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fa fa-document-o fa-3x mb-3 sr-contact"> <i class="fas fa-file-invoice"></i> </i>
+            <p>
+              <a href="https://download.canva.com/DADFtVYqhvs/45/custom-221655217.pdf?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27Resume.pdf&response-expires=Wed%2C%2017%20Oct%202018%2003%3A07%3A19%20GMT&AWSAccessKeyId=AKIAJHKNGJLC2J7OGJ6Q&Expires=1539745639&Signature=KzN3cZuKN3WJod7FxQRCkoMMnoA%3D" download="resume">Resume</a>
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -262,13 +278,14 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
+    
     <!-- Custom scripts for this template -->
+    <script src="./js/projectLink.js"></script>
     <script src="js/creative.min.js"></script>
 
   </body>
